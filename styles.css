@@ -111,4 +111,48 @@ body {
   margin-top: 1.875rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
+  .grid .label-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    background-color: var(--green-color);
+  }
+  .grid .label-start h1 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 500;
+  }
+  .grid .label-start i {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+  }
+  .grid .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .grid .form-container .title {
+    display: block;
+  }
+  .grid .form-container .title h1 {
+    font-size: 1.6rem;
+    color: var(--orange-color);
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
